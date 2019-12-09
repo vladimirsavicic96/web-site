@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>SBV ELEKTROINSTALACIJE DOO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"> 
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/slider.css">
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+   <a href="#"><img src="img/SBV-Logo1.png" alt="" id="logo"></a>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">POČETNA</a> 
+    <a href="#onama" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">O NAMA</a> 
+    <a href="#reference" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">REFERENCE</a> 
+    <a href="#podaciofirmi" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">DJELATNOSTI</a> 
+    <a href="#kontakt" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">KONTAKT</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+    <div id="scroll">   
+      </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="img/slika11.jpg" style="width:100%" onclick="onClick(this)" alt="Ploča sa osiguračima">
+      <img src="img/slika1.jpg" style="width:100%" onclick="onClick(this)" alt="Voltmetar i mjerenje napona">
+      <img src="img/S4.jpg" style="width:100%" onclick="onClick(this)" alt="Kuca koja sija kao pravi dom, sa pravim elektorinstalacijama">
+    </div>
+
+    <div class="w3-half">
+      <img src="img/S2.jpg" style="width:100%" onclick="onClick(this)" alt="Ploča sa osiguračima i elektro brojilom">
+      <img src="img/S3.jpg" style="width:100%" onclick="onClick(this)" alt="Mjerenje napona duspolpm">
+      <img src="img/S5.jpg" style="width:100%" onclick="onClick(this)" alt="Nešto od osnovnih alata svakog elektorinstalacionog radnika">
+    </div>
+  </div>
+
+   <!-- Modal for full size images on click -->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- O nama -->
+  <div class="w3-container" id="onama" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>O NAMA</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Firma SBV d.o.o. elektroinstalacije osnovana i započela sa radom 2003. godine kao samostalna zanatska radnja. Glavna djelatnost firme je izvođenje elektroinstalacija jake struje, s tim što se dodatno bavimo i izvođenjem slabe struje, mjerenjima i instalacijama brodova. 
+      U 2016. godini firma se transformisala i preregistrovala u društvo sa ograničenom odgovornošću. Danas firma SBV zapošljava 20 radnika, i ostvaruje pozitivne rezultate na tržištu rada.
+    </p>
+
+  <img class="slider" name="slider">
+  </div>
+  
+  <!-- reference -->
+  <div class="w3-container" id="reference" style="margin-top:70px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>REFERENCE</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Ovdje možete vidjeti nešto od projekata koje smo uspješno realizovali</p>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+     <p><b>Apartmani Mirković - Trebinje</b></p>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/apr1.jpg" alt="first" class="d-block">
+      </div>
+      <div class="carousel-item">
+        <img src="img/apr2.jpg" alt="second" class="d-block">
+      </div>
+      <div class="carousel-item">
+        <img src="img/apr3.jpg" alt="third" class="d-block">
+      </div>
+      <div class="carousel-item">
+        <img src="img/apr4.jpg" alt="fourth" class="d-block">
+      </div>
+    </div>
+
+  </div><br>
+   
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <p><b>Apartmani Boka - Bijeljina</b></p>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/kuc1.jpg" alt="first" class="d-block">
+        </div>
+        <div class="carousel-item">
+          <img src="img/kuc2.jpg" alt="second" class="d-block">
+        </div>
+        <div class="carousel-item">
+          <img src="img/kuc3.jpg" alt="third" class="d-block">
+        </div>
+        <div class="carousel-item">
+          <img src="img/kuc4.jpg" alt="fourth" class="d-block">
+        </div>
+      </div>
+  
+    </div><br>
+
+   
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <p><b>Bontech - Doboj</b></p>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/vla6.jpg" alt="first" class="d-block">
+        </div>
+        <div class="carousel-item">
+          <img src="img/vla2.jpg" alt="second" class="d-block">
+        </div>
+        <div class="carousel-item">
+          <img src="img/vla3.jpg" alt="third" class="d-block">
+        </div>
+        <div class="carousel-item">
+          <img src="img/vla4.jpg" alt=fourth class="d-block">
+        </div>
+      </div>
+  
+    </div><br>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <p><b>Trgovački centar Mercator - Goražde</b></p>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/vla6.jpg" alt="first" class="d-block">
+        </div>
+        <div class="carousel-item">
+          <img src="img/vla2.jpg" alt="second" class="d-block">
+        </div>
+        <div class="carousel-item">
+          <img src="img/vla3.jpg" alt="third" class="d-block">
+        </div>
+        <div class="carousel-item">
+          <img src="img/vla4.jpg" alt=fourth class="d-block">
+        </div>
+      </div>
+  
+    </div>
+
+
+  <!-- Djelatnosti-->
+  <div class="w3-container" id="podaciofirmi" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>DJELATNOSTI</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p><b>Djelatnosti koje smo u mogućnosti izvoditi i kojima se bavimo:</b></p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Jaka struja</li>
+        <li class="w3-padding-16">Izradom električnih instalacija za kućanstvo</li>
+        <li class="w3-padding-16">Izradom električnih instalacija za industriju</li>
+        <li class="w3-padding-16">Izradom elektroormara za kućanstvo i industriju</li>
+        <li class="w3-padding-16">Privremeni i stalni priključci električne energije</li>
+        <li class="w3-padding-16">Servisom za popravak električnih instalacija</li>
+        <li class="w3-padding-16">Elektromontažom</li>
+        <li class="w3-padding-16">Servisom za popravak električnih instalacija</li>
+        <li class="w3-padding-16"> Instalacija, servisiranje i popravak solarnih sustavam</li>
+        <li class="w3-padding-16">
+       </li>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Slaba struja</li>
+        <li class="w3-padding-16">Telefonskim i računalnim instalacijama</li>
+        <li class="w3-padding-16"> Antenskim instalacijama</li>
+        <li class="w3-padding-16">Sustavima alarmnih uređaja</li>
+        <li class="w3-padding-16">Sustavima videonadzora</li>
+        <li class="w3-padding-16">Sustavima razglasa i ozvučenja</li>
+        <li class="w3-padding-16">Portafonskim sustavima</li>
+        <li class="w3-padding-16">Sustavima agregatskog i besprekidnog napajanja</li>
+        <li class="w3-padding-16">Sustavima CO detekcije</li>
+        <li class="w3-padding-16">
+        </li>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Mjerenja</li>
+        <li class="w3-padding-16">Mjerenjima električnih instalacija</li>
+        <li class="w3-padding-16">Mjerenjima telefonskih i LAN instalacija</li>
+        <li class="w3-padding-16">Mjerenjima termovizijskom kamerom</li>
+        <li class="w3-padding-16">Mjerenjima otpora uzemljenja</li>
+        <li class="w3-padding-16">Mjerenjima gromobranskih instalacija</li>
+        <li class="w3-padding-16">Mjerenjima jakosti svijetlosti</li>
+        <li class="w3-padding-16">
+        </li>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Instalacije brodova</li>
+        <li class="w3-padding-16">Ugradnja, ispitivanje i popravak elektroinstalacija i elektroure</li>
+        <li class="w3-padding-16">Ispitivanje i popravak rasklopnih postrojenja</li>
+        <li class="w3-padding-16">Ugradnja, ispitivanje i popravak alarmih sustava i uređaja</li>
+        <li class="w3-padding-16">Mjerenje otpora izolacije</li>
+        <li class="w3-padding-16">
+        </li>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- kontakt -->
+  <div class="w3-container" id="kontakt" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Kontakt</b></h1>
+    <hr class="w3-round">
+    <h3><b>Ukoliko imate bilo kakvih pitanja slobodno nas kontaktirajte</b></h3><br>
+
+    <section class="contact">
+      <div class="container">
+        <div class="row">
+          <p><br>
+          Grad:Banja Luka<br><br>
+          Adresa:Braće Jugovića, 78 000<br><br>
+          Mobilni: 387 66 867 858<br><br>
+          Fix: 387 51 562 266<br><br>
+          Fax: 387 51 562 266<br><br>
+          Mail: sbv@gmail.com
+  </p>
+          <!-- <div class="map"></div> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11332.57373020251!2d17.186476950000003!3d44.75748945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sba!4v1566317805483!5m2!1sen!2sba" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:20px"><p class="w3-right">@Copyright Savičić</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+    ></script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhrEFHeAefHb39fInpwvsE9Ze8ZNi6jJE&callback=initMap" async defer></script>
+<script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
+<script type="text/javascript" src="slider2.js"></script>
+
+<script type="text/javascript" src="javascript/map.js"></script>
+<script type="text/javascript" src="javascript/slider.js"></script>
+<script type="text/javascript" src="javascript/scroll.js"></script>
+<script type="text/javascript" src="javascript/connectionDatabase.js"></script>
+</body>
+</html>
